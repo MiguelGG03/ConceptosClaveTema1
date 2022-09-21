@@ -9,9 +9,9 @@ def main():
         point.setIDx()
         point.setIDy()
         print('------------CARACTERISTICAS DEL PUNTO------')
-        point.__str__()
+        point.string()
         print('------------CUADRANTE DEL PUNTO------------')
-        point.cuadrante_checker()
+        point.cuadrante()
         preg=input('Desea seguir poniendo puntos? 0=NO 1=SI :')
         if(preg=='0'):
             seguir=False
