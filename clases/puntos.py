@@ -24,7 +24,7 @@ class Punto:
         return print('Coordenada en el eje Y: {}'.format(str(self.y)))
 
     def __str__(self):
-        return print('{},{}'.format(self.x,self.y))
+        return print('({},{})'.format(self.x,self.y))
 
 
     def cuadrante_checker(self):
