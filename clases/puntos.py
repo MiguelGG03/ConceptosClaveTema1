@@ -45,8 +45,8 @@ class Punto:
             print('El punto esta en le cuadrante 4')
 
     def vector(self,vx,vy):
-        self.vx=vx
-        self.vy=vy
+        self.vx=vx-self.x
+        self.vy=vy-self.y
 
     def setIDvx(self):
         if(self.vx==''):
@@ -65,3 +65,7 @@ class Punto:
 
     def getIDvy(self):
         return print('Coordenada en el eje Y: {}'.format(str(self.vy)))
+
+    def distancia(self):
+        distancia=math.sqrt((self.vx-self.x)**2+(self.vy-self.y)**2)
+        return print('la distancia que hay entre ambos puntos es de {} unidades'.format(str(distancia)))
