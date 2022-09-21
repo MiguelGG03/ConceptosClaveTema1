@@ -1,3 +1,5 @@
+import math
+
 class Punto:
 
     def __init__(self,x,y):
@@ -30,14 +32,10 @@ class Punto:
     def cuadrante(self):
         if(self.x==0 and self.y==0):
             print('El punto esta en el origen')
-        elif(self.x>0 and self.y==0):
-            print('El punto esta entre los cuadrantes 1 y 4')
-        elif(self.x<0 and self.y==0):
-            print('El punto esta entre los cuadrantes 2 y 3')
-        elif(self.x==0 and self.y>0):
-            print('El punto esta entre los cuadrantes 1 y 2')
-        elif(self.x==0 and self.y<0):
-            print('El punto esta entre los cuadrantes 3 y 4')
+        elif(self.x!=0 and self.y==0):
+            print('El punto esta en el eje de abscisas')
+        elif(self.x==0 and self.y!=0):
+            print('El punto esta en el eje de ordenadas')
         elif(self.x>0 and self.y>0):
             print('El punto esta en le cuadrante 1')
         elif(self.x<0 and self.y>0):
