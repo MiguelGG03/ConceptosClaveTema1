@@ -27,6 +27,8 @@ class Punto:
     def __str__(self):
         return print('{},{}'.format(self.x,self.y))
 
+    def añadir_a_la_lista(self):
+
     def cuadrante_checker(self):
         if(self.x==0 and self.y==0):
             print('El punto esta en el origen')
