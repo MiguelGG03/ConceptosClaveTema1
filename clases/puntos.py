@@ -59,3 +59,9 @@ class Punto:
             self.vy=0
         else:
             self.vy=int(self.vy)
+
+    def getIDvx(self):
+        return print('Coordenada en el eje X: {}'.format(str(self.vx)))
+
+    def getIDvy(self):
+        return print('Coordenada en el eje Y: {}'.format(str(self.vy)))
