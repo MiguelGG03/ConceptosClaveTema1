@@ -26,20 +26,6 @@ class Punto:
     def __str__(self):
         return print('{},{}'.format(self.x,self.y))
 
-    def añadir_a_la_lista(self):
-        palalista=(self.x,self.y)
-        for i in self.p_existentes:
-            if self.x==i[0]:
-                if self.y==i[0]:
-                    print('No se puedde añadir el punto X:{} Y:{} ,porque ya existe.'.format(self.x,self.y))
-                else:
-                    self.p_existentes.append(palalista)
-            else:
-                self.p_existentes.append(palalista)
-
-    def chequear_p_existentes(self):
-        return self.p_existentes
-
 
     def cuadrante_checker(self):
         if(self.x==0 and self.y==0):

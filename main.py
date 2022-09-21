@@ -8,18 +8,17 @@ def main():
         point = p(a,b)
         point.setIDx()
         point.setIDy()
-        point.añadir_a_la_lista()
+        print('------------CARACTERISTICAS DEL PUNTO------')
+        point.__str__()
+        print('------------CUADRANTE DEL PUNTO------------')
+        point.cuadrante_checker()
         preg=input('Desea seguir poniendo puntos? 0=NO 1=SI :')
-        if(preg==0):
+        if(preg=='0'):
             seguir=False
-        elif(preg==1):
+        elif(preg=='1'):
             seguir=True
         else:
             print('Eso no es un 1 o un 2, asimilamos un 1 como respuesta')    
-    
-    
-    p.chequear_p_existentes()
-    point.__str__()
 
 
 if __name__=='__main__':
