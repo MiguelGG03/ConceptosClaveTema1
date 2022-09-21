@@ -23,11 +23,11 @@ class Punto:
     def getIDy(self):
         return print('Coordenada en el eje Y: {}'.format(str(self.y)))
 
-    def __str__(self):
+    def string(self):
         return print('({},{})'.format(self.x,self.y))
 
 
-    def cuadrante_checker(self):
+    def cuadrante(self):
         if(self.x==0 and self.y==0):
             print('El punto esta en el origen')
         elif(self.x>0 and self.y==0):
