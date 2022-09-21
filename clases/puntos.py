@@ -28,7 +28,6 @@ class Punto:
     def string(self):
         return print('({},{})'.format(self.x,self.y))
 
-
     def cuadrante(self):
         if(self.x==0 and self.y==0):
             print('El punto esta en el origen')
@@ -45,3 +44,18 @@ class Punto:
         elif(self.x>0 and self.y<0):
             print('El punto esta en le cuadrante 4')
 
+    def vector(self,vx,vy):
+        self.vx=vx
+        self.vy=vy
+
+    def setIDvx(self):
+        if(self.vx==''):
+            self.vx=0
+        else:
+            self.vx=int(self.vx)
+    
+    def setIDvy(self):
+        if(self.vy==''):
+            self.vy=0
+        else:
+            self.vy=int(self.vy)
