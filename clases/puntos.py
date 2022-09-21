@@ -37,6 +37,9 @@ class Punto:
             else:
                 self.p_existentes.append(palalista)
 
+    def chequear_p_existentes(self):
+        return self.p_existentes
+
 
     def cuadrante_checker(self):
         if(self.x==0 and self.y==0):
